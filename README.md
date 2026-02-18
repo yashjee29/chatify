@@ -50,7 +50,7 @@ Before running this project, make sure you have:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/chatify.git
+git clone https://github.com/yashjee29/chatify.git
 cd chatify
 ```
 
