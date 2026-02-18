@@ -1,0 +1,23 @@
+[
+  {
+    "id": "chat-uuid-here",
+    "participants": [
+      "user1-uuid",
+      "user2-uuid"
+    ],
+    "messages": [
+      {
+        "id": 1234567890123,
+        "chatId": "chat-uuid-here",
+        "senderId": "user1-uuid",
+        "text": "encrypted:message:here",
+        "time": "2026-02-18T00:00:00.000Z",
+        "status": "sent"
+      }
+    ],
+    "isGroup": false,
+    "name": "Chat Name (for groups)",
+    "createdBy": "user-uuid (for groups)",
+    "createdAt": "2026-02-18T00:00:00.000Z"
+  }
+]

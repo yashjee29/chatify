@@ -1,0 +1,246 @@
+.sidebar{
+    width: 320px;
+    background: #05050b;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 18px;
+    color: #fff;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logoBadge {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: #00b162;
+
+    color: black;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.35),
+        0 0 12px rgba(22, 199, 132, 0.35),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.brandText {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.userMenuWrapper{
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    top: -13px;
+}
+
+.searchWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 42px;
+}
+
+.searchIcon{
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    pointer-events: none;
+}
+
+.search{
+    width: 100%;
+    height: 42px;
+    border-radius: 999px;
+    background: #080f0e;
+    border: 1px solid rgba(255, 255, 255, 0.08); /* ADD THIS */
+    padding: 0 16px 0 44px;
+    box-sizing: border-box;
+    color: #e5e7eb;
+    font-size: 13px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+.search::placeholder {
+    color: #9ca3af;
+}
+
+.search:focus {
+    border-color: #16c784;;
+    background: rgba(22, 199, 132, 0.06);
+    box-shadow: 
+        0 0 0 1px rgba(22, 199, 132, 0.9),
+        0 0 0 6px rgba(22, 199, 132, 0.18);
+}
+
+.actions{
+    display: flex;
+    gap: 10px;
+    margin: 0 0 24px;
+}
+
+.actionBtn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 42px;
+    border-radius: 999px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #e5e7eb;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.actionBtn:hover {
+    background: rgba(22, 199, 132, 0.012);
+    border-width: 2px;
+    border-color: rgba(22, 199, 132, 0.3);
+    color: #16c784;
+    transition: all 0.25s ease;
+}
+
+.emptyList{
+    margin-top: 80px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.emptyList p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.emptyList span{
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.chatList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chatItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.chatItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+.userRow{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 8px 10px;
+    border-radius: 14px;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.userRow:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.avatar{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(22, 199, 132, 0.15);
+    color: #16c784;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.onlineDot{
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+
+    width: 10px;
+    
+    height: 10px;
+    border-radius: 50%;
+    background: #16c784;
+    border: 2px solid #05050b;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.userName{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.userStatus{
+    font-size: 12px;
+}
+
+.online{
+    color: #16c784;
+}
+
+.offline{
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    flex: 1;
+  }
+}

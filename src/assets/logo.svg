@@ -1,0 +1,34 @@
+<svg
+  width="48"
+  height="48"
+  viewBox="0 0 48 48"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Rounded square background -->
+  <rect
+    x="0"
+    y="0"
+    width="48"
+    height="48"
+    rx="12"
+    fill="#1DBF73"
+  />
+
+  <!-- Chat bubble -->
+  <path
+    d="M15 16
+       H33
+       C35.209 16 37 17.791 37 20
+       V26
+       C37 28.209 35.209 30 33 30
+       H22
+       L17 34
+       V30
+       H15
+       C12.791 30 11 28.209 11 26
+       V20
+       C11 17.791 12.791 16 15 16
+       Z"
+    fill="#0F6E4B"
+  />
+</svg>

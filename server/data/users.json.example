@@ -1,0 +1,9 @@
+[
+  {
+    "id": "user-uuid-here",
+    "name": "John Doe",
+    "email": "user@example.com",
+    "password": "$2b$10$hashedPasswordWillBeHere",
+    "verified": true
+  }
+]

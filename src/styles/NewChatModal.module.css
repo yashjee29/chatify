@@ -1,0 +1,195 @@
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+.modal {
+  width: 420px;
+  max-width: calc(100vw - 32px);
+  background: rgba(5, 5, 5, 0.95);
+  border-radius: 18px;
+  padding: 22px 24px 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.65),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.04);
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.closeBtn {
+  display: flex;
+  width: 36px;
+  height: 36px;
+
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* 🔑 isolates SVG from flex math */
+.iconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 18px;
+  height: 18px;
+}
+
+/* 🔑 force SVG to paint */
+.iconWrap svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  stroke-width: 2.5;
+}
+
+.closeBtn:hover {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.searchWrapper {
+  height: 44px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.searchIcon{
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 0;
+}
+
+.searchInput:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.searchInput::placeholder {
+  color: #6b7280;
+}
+
+.searchInput:focus {
+  border-color: none;
+}
+
+.searchWrapper:focus-within {
+  border-color: #16c784;
+  box-shadow: 0 0 0 2px rgba(22, 199, 132, 0.2);
+}
+
+.empty {
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+  padding: 40px 0;
+}   
+
+
+.userList {
+  margin-top: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.userRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 14px;
+  border-radius: 14px;
+
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.userRow:hover {
+  background: rgba(22, 199, 132, 0.1);
+  transform: translateY(-1px);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background: rgba(22, 199, 132, 0.15);
+  color: #16c784;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e5e7eb;
+}
+
+.userStatus {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.online{
+  color: #16c784;
+}
+
+.offline{
+  color: #6b7280;
+}

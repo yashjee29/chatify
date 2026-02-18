@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background: #050505;
+}
+
+.chatArea {
+  flex: 1;
+  background: radial-gradient(
+      120% 120% at 50% 0%,
+      rgba(22, 199, 132, 0.04),
+      rgba(0, 0, 0, 0)
+    ),
+    #050505;
+}
